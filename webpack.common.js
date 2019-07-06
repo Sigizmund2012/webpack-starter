@@ -40,16 +40,25 @@ const config = {
         ]
       },
       {
-        test: /\.svg$/,
-        use: "file-loader"
-      },
-      {
-        test: /\.png$/,
+        test: /\.(png|svg|jpg|gif)$/,
         use: [
           {
-            loader: "url-loader",
+            loader: "file-loader",
             options: {
-              mimetype: "image/png"
+              name: "[name].[ext]",
+              outputPath: "./img"
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "./fonts"
             }
           }
         ]
