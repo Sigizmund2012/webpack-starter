@@ -36,6 +36,7 @@ const config = {
             }
           },
           "css-loader",
+          "postcss-loader",
           "sass-loader"
         ]
       },
