@@ -9,7 +9,7 @@ Supports Sass(.scss), images(png,svg,jpg,gif), fonts(woff,woff2,eot,ttf,otf), Ty
 
 [![node][node]][node-url]
 
-First you need install [Node.js](https://nodejs.org) on your OS. Then download repository archive and unzip it. Open repository folder in terminal and input the following commands:
+First you need to install [Node.js](https://nodejs.org) on your OS. Then download repository archive and unzip it. Open repository folder in terminal and start to input the following commands:
 
 ## Building and running on localhost
 
