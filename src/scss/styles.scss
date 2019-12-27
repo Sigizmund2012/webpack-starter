@@ -2,6 +2,35 @@
 @import "./helpers/mixins.scss";
 
 body {
-  color: $primary-color;
   background-color: $main-bg-color;
+  color: $primary-color;
+}
+
+.infoblock {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &__element {
+    flex-grow: 1;
+    padding: 10px;
+    background-color: white;
+    color: black;
+
+    @include small {
+      // 2 columns
+      flex-basis: 45%;
+    }
+    @include medium {
+      // 3 columns
+      flex-basis: 30%;
+    }
+    @include large {
+      // 5 columns
+      flex-basis: 18%;
+    }
+  }
+  &_modificator {
+    background-color: red;
+    color: white;
+  }
 }
