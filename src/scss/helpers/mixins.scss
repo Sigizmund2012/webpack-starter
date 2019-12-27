@@ -1,0 +1,22 @@
+@import "./variables.scss";
+
+/* Media queries */
+
+// Small devices (tablets, 768px and up)
+@mixin small {
+  @media (min-width: $small-breakpoint) {
+    @content;
+  }
+}
+// Medium devices (desktops, 992px and up)
+@mixin medium {
+  @media (min-width: $medium-breakpoint) {
+    @content;
+  }
+}
+// Large devices (large desktops, 1200px and up)
+@mixin large {
+  @media (min-width: $large-breakpoint) {
+    @content;
+  }
+}

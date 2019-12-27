@@ -1,6 +1,7 @@
-$primary-color: white;
-$bg: purple;
+@import "./helpers/variables.scss";
+@import "./helpers/mixins.scss";
+
 body {
   color: $primary-color;
-  background-color: $bg;
+  background-color: $main-bg-color;
 }
