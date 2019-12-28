@@ -19,14 +19,14 @@ Install dependencies:
 npm install
 ```
 
+To run server and start development:
+
+```sh
+npm start
+```
+
 To create a production build:
 
 ```sh
 npm run build
-```
-
-To create a development build:
-
-```sh
-npm start
 ```
