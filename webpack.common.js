@@ -7,7 +7,7 @@ const config = {
   entry: "./src/index.ts",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "./js/[hash].bundle.js"
+    filename: "./js/[fullhash].bundle.js"
   },
   module: {
     rules: [
@@ -76,7 +76,7 @@ const config = {
       template: "./src/index.html"
     }),
     new MiniCssExtractPlugin({
-      filename: "./css/[hash].bundle.css"
+      filename: "./css/[fullhash].bundle.css"
     })
   ]
 };
