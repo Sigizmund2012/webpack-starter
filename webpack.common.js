@@ -7,7 +7,7 @@ const config = {
   entry: "./src/index.ts",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "./js/[fullhash].bundle.js"
+    filename: "./js/[fullhash].bundle.js",
   },
   module: {
     rules: [
@@ -16,15 +16,15 @@ const config = {
         use: {
           loader: "babel-loader",
           options: {
-            presets: ["@babel/preset-env"]
-          }
+            presets: ["@babel/preset-env"],
+          },
         },
-        exclude: /node_modules/
+        exclude: /node_modules/,
       },
       {
         test: /\.(ts|tsx)?$/,
         loader: "ts-loader",
-        exclude: /node_modules/
+        exclude: /node_modules/,
       },
       {
         test: /\.scss$/,
@@ -32,13 +32,13 @@ const config = {
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
-              publicPath: "../"
-            }
+              publicPath: "../",
+            },
           },
           "css-loader",
           "postcss-loader",
-          "sass-loader"
-        ]
+          "sass-loader",
+        ],
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
@@ -47,10 +47,10 @@ const config = {
             loader: "file-loader",
             options: {
               name: "[name].[ext]",
-              outputPath: "./img"
-            }
-          }
-        ]
+              outputPath: "./img",
+            },
+          },
+        ],
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
@@ -59,26 +59,26 @@ const config = {
             loader: "file-loader",
             options: {
               name: "[name].[ext]",
-              outputPath: "./fonts"
-            }
-          }
-        ]
-      }
-    ]
+              outputPath: "./fonts",
+            },
+          },
+        ],
+      },
+    ],
   },
   resolve: {
-    extensions: [".tsx", ".ts", ".js"]
+    extensions: [".tsx", ".ts", ".js"],
   },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: "Webpack Starter",
-      template: "./src/index.html"
+      template: "./src/index.html",
     }),
     new MiniCssExtractPlugin({
-      filename: "./css/[fullhash].bundle.css"
-    })
-  ]
+      filename: "./css/[fullhash].bundle.css",
+    }),
+  ],
 };
 
 module.exports = config;
