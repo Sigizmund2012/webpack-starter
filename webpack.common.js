@@ -5,6 +5,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 const config = {
   entry: "./src/index.ts",
+  target: ["web", "es5"],
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "./js/[fullhash].bundle.js",
