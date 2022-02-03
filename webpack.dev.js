@@ -9,6 +9,6 @@ module.exports = merge(common, {
       directory: path.join(__dirname, "dist"),
     },
     open: true,
-    port: 3000,
+    port: "auto",
   },
 });
