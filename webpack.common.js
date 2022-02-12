@@ -76,9 +76,6 @@ const config = {
       title: "Webpack Starter",
       template: "./src/index.html",
     }),
-    new MiniCssExtractPlugin({
-      filename: "./css/bundle.css",
-    }),
   ],
 };
 
