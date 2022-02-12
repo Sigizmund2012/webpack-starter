@@ -77,7 +77,7 @@ const config = {
       template: "./src/index.html",
     }),
     new MiniCssExtractPlugin({
-      filename: "./css/[fullhash].bundle.css",
+      filename: "./css/bundle.css",
     }),
   ],
 };
