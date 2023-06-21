@@ -11,10 +11,11 @@ module.exports = merge(common, {
     },
     open: true,
     port: "auto",
+    watchFiles: ["src/**/*"],
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "./css/bundle.css",
+      filename: "./css/[name].css",
     }),
   ],
 });

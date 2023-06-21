@@ -1,5 +1,6 @@
 @import "./helpers/variables.scss";
 @import "./helpers/mixins.scss";
+@import "./helpers/fonts.scss";
 
 * {
   box-sizing: border-box;
@@ -26,6 +27,7 @@ h1 {
   justify-content: space-between;
   &__element {
     flex-grow: 1;
+    margin: 0;
     padding: 10px;
     background-color: white;
     color: black;
@@ -46,5 +48,25 @@ h1 {
   &_modificator {
     background-color: red;
     color: white;
+    font-family: Montserrat, Arial, sans-serif;
+  }
+  &_image {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+  }
+  &_bg-image {
+    position: relative;
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: url("../img/smile.svg") center no-repeat;
+      background-size: contain;
+      content: "";
+      opacity: 0.25;
+    }
   }
 }
