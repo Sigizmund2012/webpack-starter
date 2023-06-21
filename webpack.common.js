@@ -8,7 +8,7 @@ const config = {
   target: ["web", "es5"],
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "./js/[fullhash].bundle.js",
+    filename: "./js/[name].[fullhash].bundle.js",
   },
   module: {
     rules: [
@@ -56,7 +56,7 @@ const config = {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
         type: "asset/resource",
         generator: {
-          filename: "fonts/[name][ext]",
+          filename: "fonts/[name].[hash][ext]",
         },
       },
     ],
