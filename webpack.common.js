@@ -13,8 +13,11 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.html$/i,
-        loader: "html-loader",
+        test: /\.hbs$/,
+        loader: "handlebars-loader",
+        options: {
+          inlineRequires: "/img/",
+        },
       },
       {
         test: /\.js$/,
@@ -68,7 +71,7 @@ const config = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: "Webpack Starter",
-      template: "./src/index.html",
+      template: "./src/index.hbs",
     }),
   ],
 };
