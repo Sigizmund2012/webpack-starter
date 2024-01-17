@@ -1,6 +1,6 @@
 # Simple starter project.
 
-Supports Sass(.scss), images(png,svg,jpg,gif), fonts(woff,woff2,eot,ttf,otf), TypeScript and Webpack as dependencies bundler.
+Supports Handlebars templates(.hbs), Sass(.scss), images(png,svg,jpg,gif), fonts(woff,woff2,eot,ttf,otf), TypeScript and Webpack as dependencies bundler.
 
 ## Getting started
 
