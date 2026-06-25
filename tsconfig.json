@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/",
+    "rootDir": "./src",
+    "outDir": "./dist",
     "sourceMap": true,
     "strict": true,
     "noImplicitReturns": true,
     "noImplicitAny": true,
     "module": "es6",
-    "moduleResolution": "node",
-    "target": "es5",
+    "moduleResolution": "bundler",
+    "target": "es2015",
     "allowJs": true,
     "allowSyntheticDefaultImports": true
   },

@@ -4,7 +4,7 @@ Supports Handlebars templates(.hbs), Sass(.scss), images(png,svg,jpg,gif), fonts
 
 ## Getting started
 
-First you need to install [Node.js](https://nodejs.org) on your OS. Then download repository archive and unzip it. Open repository folder in terminal and start to input the following commands:
+First you need to install [Node.js](https://nodejs.org) on your OS( the project tested with Node.js v.24 ). Then download repository archive and unzip it. Open repository folder in terminal and start to input the following commands:
 
 ## Building and running on localhost
 

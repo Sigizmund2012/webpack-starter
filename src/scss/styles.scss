@@ -1,6 +1,6 @@
-@import "./helpers/variables.scss";
-@import "./helpers/mixins.scss";
-@import "./helpers/fonts.scss";
+@use "./helpers/variables.scss" as *;
+@use "./helpers/mixins.scss" as *;
+@use "./helpers/fonts.scss" as *;
 
 * {
   box-sizing: border-box;
